@@ -9,6 +9,7 @@ import Dashboard from './Dashboard';
 // 处理异步
 import thunk from 'redux-thunk';
 import reducer from './reducers';
+import './config';
 const store = createStore(reducer, compose(
     applyMiddleware(thunk),
     window.devToolsExtension ? window.devToolsExtension() : () => { }
